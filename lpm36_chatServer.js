@@ -30,8 +30,8 @@ io.on('connect', function(socket) {
   var questionNum = 0; // keep count of question, used for IF condition.
   socket.on('loaded', function() { // we wait until the client has loaded and contacted us that it is ready to go.
 
-    socket.emit('answer', "Hey, hello I am \"___*-\" a simple chat bot example."); //We start with the introduction;
-    setTimeout(timedQuestion, 5000, socket, "What is your name?"); // Wait a moment and respond with a question.
+    socket.emit('answer', "Hey, hello I am Dining Hall Bot. "); //We start with the introduction;
+    setTimeout(timedQuestion, 5000, socket, "We're making chicken tacos."); // Wait a moment and respond with a question.
 
   });
   socket.on('message', (data) => { // If we get a new message from the client we process it;
@@ -51,13 +51,32 @@ function bot(data, socket, questionNum) {
 
   /// These are the main statments that make up the conversation.
   if (questionNum == 0) {
-    answer = 'Hello ' + input + ' :-)'; // output response
+    answer = 'Are you excited?'; // output response
     waitTime = 5000;
-    question = 'How old are you?'; // load next question
+    question = 'How many people will be at this meal?'; // load next question
   } else if (questionNum == 1) {
-    answer = 'Really, ' + input + ' years old? So that means you were born in: ' + (2018 - parseInt(input)); // output response
+    answer = 'Really, ' + input + ' people? So that means you need ' + (0.33 * parseInt(input)) + 'pounds of chicken.'; // output response
     waitTime = 5000;
-    question = 'Where do you live?'; // load next question
+    question = 'Do you need to buy tortillas?'; // load next question
+    else if (input.toLowerCase() === 'yes' || input === 1) {
+      answer = 'Cool. You need' + (2 * parseInt(input)) + 'tortillas.";
+      waitTime = 5000
+    question = 'Do you need to buy salsa?'; // load next question
+    else if (input.toLowerCase() === 'yes' || input === 1) {
+      answer = 'Cool. You need' + (3 * parseInt(input)) + 'ounces of salsa.";
+      waitTime = 5000
+    question = 'Do you need to buy cheese?'; // load next question
+    else if (input.toLowerCase() === 'yes' || input === 1) {
+      answer = 'Cool. You need' + (2 * parseInt(input)) + 'ounces of cheese.";
+      waitTime = 5000
+    question = 'Do you need to buy black beans?'; // load next question
+    else if (input.toLowerCase() === 'yes' || input === 1) {
+      answer = 'Cool. You need' + (3 * parseInt(input)) + 'ounces of black beans.";
+      waitTime = 5000
+    question = 'Do you need to buy lettuce?'; // load next question
+    else if (input.toLowerCase() === 'yes' || input === 1) {
+      answer = 'Cool. You need' + (0.4 * parseInt(input)) + 'heads of lettuce.";
+      waitTime = 5000
   } else if (questionNum == 2) {
     answer = 'Cool! I have never been to ' + input + '.';
     waitTime = 5000;
