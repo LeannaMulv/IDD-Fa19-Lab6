@@ -116,7 +116,7 @@ function bot(data, socket, questionNum) {
       answer = '';
       waitTime = 100;
      }
-    question = 'You are all set. Enjoy the tacos!
+    question = 'You are all set. Enjoy the tacos!;
     }
       
   //{
