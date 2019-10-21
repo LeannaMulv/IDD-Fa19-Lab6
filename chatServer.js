@@ -125,7 +125,7 @@ function bot(data, socket, questionNum) {
       waitTime = 5000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
-       answer = '';
+      //answer = '';
       waitTime = 100;
      }
     
