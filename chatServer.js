@@ -102,7 +102,7 @@ function bot(data, socket, questionNum) {
      }
     question = 'Do you need to buy black beans?'; //repeat this chunk for each ingredient
     
-    else if (questionNum == 6) {
+    if (questionNum == 6) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of black beans.';
       waitTime = 2000
