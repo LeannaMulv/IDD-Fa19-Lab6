@@ -78,7 +78,7 @@ function bot(data, socket, questionNum) {
       waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
-       answer = '';
+      answer = '';
       waitTime = 100;
      }
     question = 'Do you need to buy cheese?'; //repeat this chunk for each ingredient
@@ -113,7 +113,7 @@ function bot(data, socket, questionNum) {
       waitTime = 5000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
-      //answer = '';
+      answer = '';
       waitTime = 100;
      }
     
