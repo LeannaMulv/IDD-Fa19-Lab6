@@ -64,7 +64,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
       waitTime = 2000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
