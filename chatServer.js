@@ -63,23 +63,23 @@ function bot(data, socket, questionNum) {
   } else if (questionNum == 2) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
-      waitTime = 2000
+      waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
       }
      }
     question = 'Do you need to buy salsa?';
     
-    else if (questionNum == 3) {
+  } else if (questionNum == 3) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
-      waitTime = 2000
+      waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
      }
     question = 'Do you need to buy salsa?'; //repeat this chunk for each ingredient
     } 
@@ -87,11 +87,11 @@ function bot(data, socket, questionNum) {
     else if (questionNum == 4) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (3 * NumberOfPeople) + 'ounces of salsa.';
-      waitTime = 2000
+      waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
      }
     question = 'Do you need to buy cheese?'; //repeat this chunk for each ingredient
     } 
@@ -99,22 +99,22 @@ function bot(data, socket, questionNum) {
     else if (questionNum == 5) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of cheese.';
-      waitTime = 2000
+      waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
      }
     question = 'Do you need to buy black beans?'; //repeat this chunk for each ingredient
     }
     else if (questionNum == 6) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of black beans.';
-      waitTime = 2000
+      waitTime = 2000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
      }
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
     }  
@@ -122,11 +122,11 @@ function bot(data, socket, questionNum) {
     else if (questionNum == 7) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (0.4 * NumberOfPeople) + 'heads of lettuce.';
-      waitTime = 5000
+      waitTime = 5000;
     }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
-      waitTime = 100
+      waitTime = 100;
      }
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
     }
