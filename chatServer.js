@@ -32,7 +32,7 @@ io.on('connect', function(socket) {
   socket.on('loaded', function() { // we wait until the client has loaded and contacted us that it is ready to go.
 
     socket.emit('answer', "Hey, hello I am Dining Hall Bot. "); //We start with the introduction;
-    setTimeout(timedQuestion, 5000, socket, "We're making chicken tacos."); // Wait a moment and respond with a question.
+    setTimeout(timedQuestion, 2000, socket, "We're making chicken tacos."); // Wait a moment and respond with a question.
 
   });
   socket.on('message', (data) => { // If we get a new message from the client we process it;
