@@ -69,7 +69,7 @@ function bot(data, socket, questionNum) {
        answer = '';
       waitTime = 100;
       }
-     }
+  
     question = 'Do you need to buy salsa?';
     
   } else if (questionNum == 3) {
