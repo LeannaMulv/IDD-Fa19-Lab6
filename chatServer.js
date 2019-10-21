@@ -120,6 +120,7 @@ function bot(data, socket, questionNum) {
     }
     else if (questionNum == 7) {
       answer = 'Enjoy the tacos!';
+    }
   //{
   /// We take the changed data and distribute it across the required objects.
   socket.emit('answer', answer);
