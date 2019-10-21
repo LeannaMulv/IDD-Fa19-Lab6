@@ -69,18 +69,6 @@ function bot(data, socket, questionNum) {
        answer = '';
       waitTime = 100;
       }
-  
-    question = 'Do you need to buy salsa?';
-    
-  } else if (questionNum == 3) {
-    if (input.toLowerCase() === 'yes' || input === 1) {
-      answer = 'Cool. You need ' + (2 * NumberOfPeople) + ' tortillas.';
-      waitTime = 2000;
-    }
-    if(input.toLowerCase() === 'no' || input === 0) {
-       answer = '';
-      waitTime = 100;
-     }
     question = 'Do you need to buy salsa?'; //repeat this chunk for each ingredient
     } 
     
