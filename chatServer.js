@@ -133,12 +133,12 @@ function bot(data, socket, questionNum) {
   setTimeout(timedQuestion, waitTime, socket, question);
   return (questionNum + 1);
 }
+      
 function timedQuestion(socket, question) {
   if (question != '') {
     socket.emit('question', question);
-  if {
-    console.log('No Question send!');
+  } else {
+    //console.log('No Question send!');
   }
-
-
+}
 //----------------------------------------------------------------------------//
