@@ -64,16 +64,19 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
       waitTime = 2000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
+      }
      }
     question = 'Do you need to buy salsa?';
-    } 
+    
     else if (questionNum == 3) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
       waitTime = 2000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
@@ -85,6 +88,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (3 * NumberOfPeople) + 'ounces of salsa.';
       waitTime = 2000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
@@ -96,38 +100,43 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of cheese.';
       waitTime = 2000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
     question = 'Do you need to buy black beans?'; //repeat this chunk for each ingredient
-    
-    if (questionNum == 6) {
+    }
+    else if (questionNum == 6) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of black beans.';
       waitTime = 2000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
-      
+    }  
     
-    if (questionNum == 7) {
+    else if (questionNum == 7) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (0.4 * NumberOfPeople) + 'heads of lettuce.';
       waitTime = 5000
+    }
     if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
-    {
+    }
+      
+    else if (questionNum == 8) {
     answer = 'You are all set. Enjoy the tacos!'; // output response
     waitTime = 0;
     question = '';
   }
-      {
+  {
   /// We take the changed data and distribute it across the required objects.
   socket.emit('answer', answer);
   setTimeout(timedQuestion, waitTime, socket, question);
