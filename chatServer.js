@@ -139,6 +139,6 @@ function timedQuestion(socket, question) {
     socket.emit('question', question);
   } else {
     console.log('No Question send!');
-}
+});
 
 //----------------------------------------------------------------------------//
