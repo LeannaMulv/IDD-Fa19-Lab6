@@ -113,7 +113,7 @@ function bot(data, socket, questionNum) {
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
       
     
-    else if (questionNum == 7) {
+    if (questionNum == 7) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (0.4 * NumberOfPeople) + 'heads of lettuce.';
       waitTime = 5000
