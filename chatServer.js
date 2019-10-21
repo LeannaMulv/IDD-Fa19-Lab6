@@ -121,7 +121,7 @@ function bot(data, socket, questionNum) {
       
   //{
   /// We take the changed data and distribute it across the required objects.
-  socket.emit('answer', answer);
+  //socket.emit('answer', answer);
   setTimeout(timedQuestion, waitTime, socket, question);
   return (questionNum + 1);
 }
