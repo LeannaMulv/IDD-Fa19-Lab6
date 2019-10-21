@@ -118,8 +118,10 @@ function bot(data, socket, questionNum) {
      }
     question = 'You are all set.';
     }
-    else if (questionNum == 7) {
-      answer = 'Enjoy the tacos!';
+    else {
+    answer = 'Enjoy the tacos!';
+    waitTime = 0;
+    question = '';
     }
   //{
   /// We take the changed data and distribute it across the required objects.
