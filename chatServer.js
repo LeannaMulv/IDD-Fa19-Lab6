@@ -74,7 +74,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'tortillas.';
       waitTime = 2000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
@@ -85,7 +85,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (3 * NumberOfPeople) + 'ounces of salsa.';
       waitTime = 2000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
@@ -96,7 +96,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of cheese.';
       waitTime = 2000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
@@ -106,7 +106,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (2 * NumberOfPeople) + 'ounces of black beans.';
       waitTime = 2000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
@@ -117,7 +117,7 @@ function bot(data, socket, questionNum) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Cool. You need' + (0.4 * NumberOfPeople) + 'heads of lettuce.';
       waitTime = 5000
-    else if(input.toLowerCase() === 'no' || input === 0) {
+    if(input.toLowerCase() === 'no' || input === 0) {
        answer = '';
       waitTime = 100
      }
