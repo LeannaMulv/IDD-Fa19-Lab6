@@ -72,7 +72,7 @@ function bot(data, socket, questionNum) {
     question = 'Do you need to buy salsa?'; //repeat this chunk for each ingredient
     } 
     
-    else if (questionNum == 4) {
+    else if (questionNum == 3) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Word. You need ' + (3 * NumberOfPeople) + ' ounces of salsa.';
       waitTime = 2000;
@@ -84,7 +84,7 @@ function bot(data, socket, questionNum) {
     question = 'Do you need to buy cheese?'; //repeat this chunk for each ingredient
     } 
     
-    else if (questionNum == 5) {
+    else if (questionNum == 4) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Awesomesauce. You need ' + (2 * NumberOfPeople) + ' ounces of cheese.';
       waitTime = 2000;
@@ -95,7 +95,7 @@ function bot(data, socket, questionNum) {
      }
     question = 'Do you need to buy black beans?'; //repeat this chunk for each ingredient
     }
-    else if (questionNum == 6) {
+    else if (questionNum == 5) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Dope. You need ' + (2 * NumberOfPeople) + ' ounces of black beans.';
       waitTime = 2000;
@@ -107,7 +107,7 @@ function bot(data, socket, questionNum) {
     question = 'Do you need to buy lettuce?'; //repeat this chunk for each ingredient
     }  
     
-    else if (questionNum == 7) {
+    else if (questionNum == 6) {
     if (input.toLowerCase() === 'yes' || input === 1) {
       answer = 'Groovy. You need ' + (0.4 * NumberOfPeople) + ' heads of lettuce.';
       waitTime = 5000;
@@ -119,7 +119,7 @@ function bot(data, socket, questionNum) {
     
     }
       
-    else if (questionNum == 8) {
+    else if (questionNum == 7) {
     answer = 'You are all set. Enjoy the tacos!'; // output response
     waitTime = 0;
     question = '';
