@@ -138,7 +138,7 @@ function bot(data, socket, questionNum) {
 function timedQuestion(socket, question) {
   if (question != '') {
     socket.emit('question', question);
-  } //else {
+} //else {
     //console.log('No Question send!');
   //}
 
